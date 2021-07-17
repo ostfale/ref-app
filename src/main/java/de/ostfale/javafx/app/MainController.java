@@ -5,6 +5,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.MenuBar;
 import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
@@ -15,12 +16,15 @@ public class MainController extends BaseController<Void> implements Initializabl
     @FXML
     private AnchorPane apMain;
 
+    @FXML
+    private MenuBar mBar;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
 
-//    @FXML
-//    void closeApplication(ActionEvent event) {
-//        Platform.exit();
-//    }
+    @FXML
+    void closeApplication(ActionEvent event) {
+        Platform.exit();
+    }
 }
