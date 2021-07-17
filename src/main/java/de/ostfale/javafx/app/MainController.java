@@ -1,0 +1,26 @@
+package de.ostfale.javafx.app;
+
+import de.ostfale.javafx.common.BaseController;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MainController extends BaseController<Void> implements Initializable {
+
+    @FXML
+    private AnchorPane apMain;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+    }
+
+//    @FXML
+//    void closeApplication(ActionEvent event) {
+//        Platform.exit();
+//    }
+}
